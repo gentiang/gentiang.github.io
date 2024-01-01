@@ -6,7 +6,7 @@ categories: [Map, rayshader, Population]
 image: "image.png"
 ---
 
-This map shows a unique population density map of Albania [Kontur](https://www.kontur.io/geospatial-datasets-catalog/) population data and the [`rayshader`](https://www.rayshader.com/) R package by Tyler Morgan-Wall. I take huge inspiration from [Spencer Schien](https://github.com/Pecners) whose maps and code are a massive help as I'm learning to make these.
+This map shows a unique population density map of Albania [Kontur](https://www.kontur.io/geospatial-datasets-catalog/) population data and the [`rayshader`](https://www.rayshader.com/) R package by Tyler Morgan-Wall. I take huge inspiration from [Spencer Schien](https://github.com/Pecners) whose maps and code are a massive help as I'm learning to make these. Test Netlify!
 
 ![](image.png)
 
