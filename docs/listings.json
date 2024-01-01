@@ -1,0 +1,20 @@
+[
+  {
+    "listing": "/archive.html",
+    "items": [
+      "/posts/2023/al_population_density/post.html",
+      "/posts/2023/time_use/time_use.html",
+      "/posts/2022/trade/trade.html",
+      "/posts/2022/inflation/inflation_2022.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/2023/al_population_density/post.html",
+      "/posts/2023/time_use/time_use.html",
+      "/posts/2022/trade/trade.html",
+      "/posts/2022/inflation/inflation_2022.html"
+    ]
+  }
+]
