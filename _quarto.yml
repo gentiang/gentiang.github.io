@@ -11,10 +11,13 @@ website:
       - archive.qmd
       - text: CV
         href: "download_files/CV_Gentian Gashi.PDF"
+        target: '_blank'
       - icon: github
         href: https://github.com/gentiang
+        target: '_blank'
       - icon: linkedin
         href: https://www.linkedin.com/in/gentiangashi/
+        target: '_blank'
 format:
   html:
     theme: yeti
