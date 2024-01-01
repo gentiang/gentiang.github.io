@@ -3,7 +3,7 @@ title: "An Overview of Kosovo’s Trade"
 subtitle: "Kosovo’s negative trade balance is deepening despite recent increases in exports. Where is this sudden increase in trade volume, and especially imports coming from?"
 author: "Gentian Gashi"
 date: "2022-09-17"
-categories: [news, analysis, trade, data science, economics]
+categories: [News, Analysis, Trade, Data Science, Economics]
 image: "dc_imp.jpg"
 ---
 
@@ -49,6 +49,6 @@ In terms of imports, Kosovo experienced a large increase of €164 million in ma
 
 Nevertheless, despite knowing what kinds of goods took the lead in terms of trade value, we cannot necessarily conclude with absolute certainty that Kosovo is trading more in quantity. Being that Kosovo is a net importer, it is generally subjected to global price changes and therefore may suffer as a result of global price instability like we have seen in recent years which can undoubtedly be reflected in the country's trade volume. More research has to be done while considering inflation as well.
 
-***
+------------------------------------------------------------------------
 
-This project was carried out based on monthly trade data for Kosovo collected from the [Comext](https://ec.europa.eu/eurostat/web/international-trade-in-goods/data/focus-on-comext) database for trade data managed by Eurostat. The data was combined and cleaned in R Studio. The analysis and visualizations were also produced in R Studio, and the code and other necessary information can be found on my [GitHub page](https://github.com/gentiang/trade_analysis.
+This project was carried out based on monthly trade data for Kosovo collected from the [Comext](https://ec.europa.eu/eurostat/web/international-trade-in-goods/data/focus-on-comext) database for trade data managed by Eurostat. The data was combined and cleaned in R Studio. The analysis and visualizations were also produced in R Studio, and the code and other necessary information can be found on my \[GitHub page\](https://github.com/gentiang/trade_analysis.

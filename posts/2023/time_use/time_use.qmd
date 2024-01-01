@@ -2,7 +2,7 @@
 title: "Time Use in Kosovo"
 author: "Gentian Gashi"
 date: "2023-04-15"
-categories: [news, analysis, time use, data viz, labor force, ggplot2]
+categories: [News, Analysis, Time use, Data Viz, Labor Force, ggplot2]
 image: "time_use.png"
 ---
 

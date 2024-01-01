@@ -2,7 +2,7 @@
 title: "A Quick Look at Inflation in Kosovo"
 author: "Gentian Gashi"
 date: "2022-08-21"
-categories: [news, analysis, inflation, data science, economics]
+categories: [News, Analysis, Inflation, Data Science, Economics]
 image: "hicp_year.png"
 ---
 

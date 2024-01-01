@@ -7,12 +7,17 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/gentiangashi/
+      target: '_blank'
     - icon: github
       text: Github
       href: https://github.com/gentiang
+      target: '_blank'
     - icon: envelope
       text: E-mail
       href: mailto:gentiangsh@gmail.com
+    - text: CV
+      href: "download_files/CV_Gentian Gashi.PDF"
+      target: '_blank'
   image-shape: rectangle
 ---
 

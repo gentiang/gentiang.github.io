@@ -2,7 +2,7 @@
 title: "Albania Population Density"
 author: "Gentian Gashi"
 date: "2023-12-31"
-categories: [map, rayshader, population]
+categories: [Map, rayshader, Population]
 image: "image.png"
 ---
 
