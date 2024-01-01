@@ -2,6 +2,7 @@
   {
     "listing": "/archive.html",
     "items": [
+      "/posts/2023/test_post/test.html",
       "/posts/2023/al_population_density/post.html",
       "/posts/2023/time_use/time_use.html",
       "/posts/2022/trade/trade.html",
@@ -11,6 +12,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/2023/test_post/test.html",
       "/posts/2023/al_population_density/post.html",
       "/posts/2023/time_use/time_use.html",
       "/posts/2022/trade/trade.html",
