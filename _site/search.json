@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Blog",
+    "title": "About",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nDec 31, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nDec 28, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Gentian Gashi is a Consultant for Economics and Data Science at The World Bank in Kosovo and Austria. When not innovating on data platforms, Gentian enjoys spending time hiking and running."
   },
   {
     "objectID": "about.html",
@@ -14,24 +14,87 @@
     "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nDec 31, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nDec 28, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nDec 31, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nDec 28, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nAlbania Population Density\n\n\n\n\n\n\n\nmap\n\n\nrayshader\n\n\npopulation\n\n\n\n\n\n\n\n\n\n\n\nDec 31, 2023\n\n\n0 min\n\n\n\n\n\n\n  \n\n\n\n\nTime Use in Kosovo\n\n\n\n\n\n\n\nnews\n\n\nanalysis\n\n\ntime use\n\n\ndata viz\n\n\nlabor force\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nApr 15, 2023\n\n\n0 min\n\n\n\n\n\n\n  \n\n\n\n\nAn Overview of Kosovo’s Trade\n\n\nKosovo’s negative trade balance is deepening despite recent increases in exports. Where is this sudden increase in trade volume, and especially imports coming from?\n\n\n\n\nnews\n\n\nanalysis\n\n\ntrade\n\n\ndata science\n\n\neconomics\n\n\n\n\n\n\n\n\n\n\n\nSep 17, 2022\n\n\n2 min\n\n\n\n\n\n\n  \n\n\n\n\nA Quick Look at Inflation in Kosovo\n\n\n\n\n\n\n\nnews\n\n\nanalysis\n\n\ninflation\n\n\ndata science\n\n\neconomics\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2022\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/test_post/post.html",
+    "href": "posts/test_post/post.html",
+    "title": "Albania Population Density",
+    "section": "",
+    "text": "This map shows the population density of Albania based on Kontur population data."
+  },
+  {
+    "objectID": "archive.html",
+    "href": "archive.html",
+    "title": "Archive",
+    "section": "",
+    "text": "Albania Population Density\n\n\n\n\n\n\n\n\n\nDec 31, 2023\n\n\n\n\n\n\n\n\nTime Use in Kosovo\n\n\n\n\n\n\n\n\n\nApr 15, 2023\n\n\n\n\n\n\n\n\nAn Overview of Kosovo’s Trade\n\n\nKosovo’s negative trade balance is deepening despite recent increases in exports. Where is this sudden increase in trade volume, and especially imports coming from?\n\n\n\n\n\n\nSep 17, 2022\n\n\n\n\n\n\n\n\nA Quick Look at Inflation in Kosovo\n\n\n\n\n\n\n\n\n\nAug 21, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\nAlbert-Ludwigs University of Freiburg | Freiburg, Germany M.Sc. in Economics | October 2016 - March 2019\nAmerican University in Bulgaria | Blagoevgrad, Bulgaria B.A in Economics | August 2012 - May 2016"
+  },
+  {
+    "objectID": "index.html#work-experience",
+    "href": "index.html#work-experience",
+    "title": "About",
+    "section": "Work Experience",
+    "text": "Work Experience\nThe World Bank | Prishtina, Kosovo & Vienna, Austria Economist & Data Scientist | March 2023 - Present\nUNICEF | Prishtina, Kosovo Consultant for Data & Statistics | August 2021 - February 2022\nGAP Institute | Prishtina, Kosovo Researcher | August 2019 - August 2021"
+  },
+  {
+    "objectID": "posts/inflation_2022/inflation_2022.html",
+    "href": "posts/inflation_2022/inflation_2022.html",
+    "title": "A Quick Look at Inflation in Kosovo",
+    "section": "",
+    "text": "Two years ago, with tens of thousands of people out of work and politicians striving to lift the economies in the Western Balkans out of a pandemic-induced recession, inflation was inevitable. Moreover, with the beginning of the Russian invasion in Ukraine that has disrupted supply chains considerably, inflation has been affected doubly so. Though transitory in nature as a consequence of dysfunctional supply chains and labor shortages that would be expected to return back to normal as demonstrated by previous economic recessions, current inflation is running particularly high.\nAccording to the latest data from National Statistical Offices in the Western Balkans, the annual inflation rate in June, 2022 was reaching 15%, similar to that during the global recession of 2008, as measured by the harmonized index of consumer prices. North Macedonia leads the pack with a rate of 14.5%, closely followed by Kosovo (14.1%). Montenegro and Serbia have experienced a considerable increase in their inflation by 11.9% and 11.6%, respectively. Albania’s inflation in June, 2022 stood at 6.6%, considerably less compared to the other countries.\n\nOne of the countries where inflation has risen fastest over the past couple of months is Kosovo. In June, 2021, the annual inflation rate was standing at 2.4%, picking up gradually every month and becoming 14.1% in June, 2022. Being that Kosovo is a net importer of electricity, oil, wheat, corn, vegetable oil, supply shocks to international markets as a result of the Russian invasion of Ukraine are bound to be reflected in its economy1.\n\nRegardless of the absolute level of inflation in Kosovo, what’s most striking is the relatively fast rise of inflation in the year 2022. The annual change in Kosovo’s monthly inflation in the second quarter of this year averaged 13.6% compared to the second quarter of 2021, when monthly inflation averaged just 2.6%. High inflation has been an exception in the past 20 years in Kosovo, where inflation exceeded the 5% bound only twice before the current one. However, it seems that inflation in Kosovo is slowly approaching the 15% bound as well. While high inflation is a transitory period, current levels of inflation in Kosovo stand at an all-time high and it is unforeseeable as to when they will drop.\n\nThe visualizations and analysis in this article were done in RStudio, and the source code, raw datasets, and additional files for the analysis can be found on my GitHub page.2,3,4,5,6,7\n\n\n\n\nFootnotes\n\n\n“Impact of the War in Ukraine on Kosovo’s Economy,” GAP Institute. May, 2022↩︎\nKosovo Agency of Statistics↩︎\nINSTAT - Institute of Statistics Albania↩︎\nMONSTAT - Statistical Office of Montenegro↩︎\nEurostat↩︎\nDIVA-GIS for shapefiles↩︎\nRiffomonas project - inspiration for inflation animation↩︎"
+  },
+  {
+    "objectID": "posts/al_population_density/post.html",
+    "href": "posts/al_population_density/post.html",
+    "title": "Albania Population Density",
+    "section": "",
+    "text": "This map shows the population density of Albania based on Kontur population data."
+  },
+  {
+    "objectID": "posts/2022/inflation_2022/inflation_2022.html",
+    "href": "posts/2022/inflation_2022/inflation_2022.html",
+    "title": "A Quick Look at Inflation in Kosovo",
+    "section": "",
+    "text": "Two years ago, with tens of thousands of people out of work and politicians striving to lift the economies in the Western Balkans out of a pandemic-induced recession, inflation was inevitable. Moreover, with the beginning of the Russian invasion in Ukraine that has disrupted supply chains considerably, inflation has been affected doubly so. Though transitory in nature as a consequence of dysfunctional supply chains and labor shortages that would be expected to return back to normal as demonstrated by previous economic recessions, current inflation is running particularly high.\nAccording to the latest data from National Statistical Offices in the Western Balkans, the annual inflation rate in June, 2022 was reaching 15%, similar to that during the global recession of 2008, as measured by the harmonized index of consumer prices. North Macedonia leads the pack with a rate of 14.5%, closely followed by Kosovo (14.1%). Montenegro and Serbia have experienced a considerable increase in their inflation by 11.9% and 11.6%, respectively. Albania’s inflation in June, 2022 stood at 6.6%, considerably less compared to the other countries.\n\nOne of the countries where inflation has risen fastest over the past couple of months is Kosovo. In June, 2021, the annual inflation rate was standing at 2.4%, picking up gradually every month and becoming 14.1% in June, 2022. Being that Kosovo is a net importer of electricity, oil, wheat, corn, vegetable oil, supply shocks to international markets as a result of the Russian invasion of Ukraine are bound to be reflected in its economy1.\n\nRegardless of the absolute level of inflation in Kosovo, what’s most striking is the relatively fast rise of inflation in the year 2022. The annual change in Kosovo’s monthly inflation in the second quarter of this year averaged 13.6% compared to the second quarter of 2021, when monthly inflation averaged just 2.6%. High inflation has been an exception in the past 20 years in Kosovo, where inflation exceeded the 5% bound only twice before the current one. However, it seems that inflation in Kosovo is slowly approaching the 15% bound as well. While high inflation is a transitory period, current levels of inflation in Kosovo stand at an all-time high and it is unforeseeable as to when they will drop.\n\nThe visualizations and analysis in this article were done in RStudio, and the source code, raw datasets, and additional files for the analysis can be found on my GitHub page.2,3,4,5,6,7\n\n\n\n\nFootnotes\n\n\n“Impact of the War in Ukraine on Kosovo’s Economy,” GAP Institute. May, 2022↩︎\nKosovo Agency of Statistics↩︎\nINSTAT - Institute of Statistics Albania↩︎\nMONSTAT - Statistical Office of Montenegro↩︎\nEurostat↩︎\nDIVA-GIS for shapefiles↩︎\nRiffomonas project - inspiration for inflation animation↩︎"
+  },
+  {
+    "objectID": "posts/2022/trade/trade.html",
+    "href": "posts/2022/trade/trade.html",
+    "title": "An Overview of Kosovo’s Trade",
+    "section": "",
+    "text": "An overview of trade data collected from the Comext data portal managed by the European Comission that houses detailed trade data for Western Balkan countries shows unusual recent developments in terms of trade volume, trade partners and types of products traded.\nBetween the years 2010 and 2021, imports rose gradually as well as exports, which did so at a slower pace. However, in 2021 the negative trade balance deepened quickly and considerably, reaching €-4 billion in 2021, with exports standing at €593 million and imports at €4.6 billion.\n\n\n\n\n\nYearly trade in Kosovo comprising of exports, imports and trade balance\n\n\n\n\n\n\nIn 2021, Kosovo’s main trading partners were the United States when it comes to exports, and Germany when it comes to imports, standing at €123 million and €607 million, respectively.\n\n\n\nKosovo’s main trading partners\n\n\nWhen looking at the different kinds of goods traded in 2021, we see that Kosovo’s main exports were miscellaneous manufactured articles, base metals and articles thereof, and plastics and articles thereof. On the other hand, Kosovo’s main imports comprise of mineral products, machinery and electrical equipment, and prepared foodstuffs and beverages.\n\n\n\n\n\n\n\nNevertheless, absolute trade volume does not necessarily explain where the unusual increases in both exports and imports come from. A quick look at the biggest differences in the value of goods traded between 2019 and 2021 illuminates the problem partially.\nWhen it comes to exports, we see that 2021 displayed a hefty increase of €134 million in miscellaneous manufactured articles (HS20 according to international tariff codes), specifically wooden furniture and sanitary products (not shown here).\n\n\n\nDifference in exports between 2021 and 2019\n\n\nIn terms of imports, Kosovo experienced a large increase of €164 million in machinery, appliances and electrical equipment (HS16), with wind-powered generating sets and data-processing equipment taking occupying the largest values (not shown here).\n\n\n\nDifference in imports between 2021 and 2019\n\n\nNevertheless, despite knowing what kinds of goods took the lead in terms of trade value, we cannot necessarily conclude with absolute certainty that Kosovo is trading more in quantity. Being that Kosovo is a net importer, it is generally subjected to global price changes and therefore may suffer as a result of global price instability like we have seen in recent years which can undoubtedly be reflected in the country’s trade volume. More research has to be done while considering inflation as well.\n\nThis project was carried out based on monthly trade data for Kosovo collected from the Comext database for trade data managed by Eurostat. The data was combined and cleaned in R Studio. The analysis and visualizations were also produced in R Studio, and the code and other necessary information can be found on my [GitHub page](https://github.com/gentiang/trade_analysis."
+  },
+  {
+    "objectID": "posts/2022/inflation/inflation_2022.html",
+    "href": "posts/2022/inflation/inflation_2022.html",
+    "title": "A Quick Look at Inflation in Kosovo",
+    "section": "",
+    "text": "Two years ago, with tens of thousands of people out of work and politicians striving to lift the economies in the Western Balkans out of a pandemic-induced recession, inflation was inevitable. Moreover, with the beginning of the Russian invasion in Ukraine that has disrupted supply chains considerably, inflation has been affected doubly so. Though transitory in nature as a consequence of dysfunctional supply chains and labor shortages that would be expected to return back to normal as demonstrated by previous economic recessions, current inflation is running particularly high.\nAccording to the latest data from National Statistical Offices in the Western Balkans, the annual inflation rate in June, 2022 was reaching 15%, similar to that during the global recession of 2008, as measured by the harmonized index of consumer prices. North Macedonia leads the pack with a rate of 14.5%, closely followed by Kosovo (14.1%). Montenegro and Serbia have experienced a considerable increase in their inflation by 11.9% and 11.6%, respectively. Albania’s inflation in June, 2022 stood at 6.6%, considerably less compared to the other countries.\n\nOne of the countries where inflation has risen fastest over the past couple of months is Kosovo. In June, 2021, the annual inflation rate was standing at 2.4%, picking up gradually every month and becoming 14.1% in June, 2022. Being that Kosovo is a net importer of electricity, oil, wheat, corn, vegetable oil, supply shocks to international markets as a result of the Russian invasion of Ukraine are bound to be reflected in its economy1.\n\nRegardless of the absolute level of inflation in Kosovo, what’s most striking is the relatively fast rise of inflation in the year 2022. The annual change in Kosovo’s monthly inflation in the second quarter of this year averaged 13.6% compared to the second quarter of 2021, when monthly inflation averaged just 2.6%. High inflation has been an exception in the past 20 years in Kosovo, where inflation exceeded the 5% bound only twice before the current one. However, it seems that inflation in Kosovo is slowly approaching the 15% bound as well. While high inflation is a transitory period, current levels of inflation in Kosovo stand at an all-time high and it is unforeseeable as to when they will drop.\n\nThe visualizations and analysis in this article were done in RStudio, and the source code, raw datasets, and additional files for the analysis can be found on my GitHub page.2,3,4,5,6,7\n\n\n\n\nFootnotes\n\n\n“Impact of the War in Ukraine on Kosovo’s Economy,” GAP Institute. May, 2022↩︎\nKosovo Agency of Statistics↩︎\nINSTAT - Institute of Statistics Albania↩︎\nMONSTAT - Statistical Office of Montenegro↩︎\nEurostat↩︎\nDIVA-GIS for shapefiles↩︎\nRiffomonas project - inspiration for inflation animation↩︎"
+  },
+  {
+    "objectID": "posts/2023/al_population_density/post.html",
+    "href": "posts/2023/al_population_density/post.html",
+    "title": "Albania Population Density",
+    "section": "",
+    "text": "This map shows a unique population density map of Albania Kontur population data and the rayshader R package by Tyler Morgan-Wall. I take huge inspiration from Spencer Schien whose maps and code are a massive help as I’m learning to make these."
+  },
+  {
+    "objectID": "posts/2023/time_use/time_use.html",
+    "href": "posts/2023/time_use/time_use.html",
+    "title": "Time Use in Kosovo",
+    "section": "",
+    "text": "The following graphical analysis shows several graphs based on time use data from a survey conducted in Kosovo in 2017. The data was analyzed and visualized via R. The graphs were combined and finalized in Adobe Illustrator.\n\n\nThis project and source code can be found on my GitHub page."
   }
 ]

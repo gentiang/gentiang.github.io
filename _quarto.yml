@@ -3,14 +3,20 @@ project:
 
 website:
   title: "Gentian Gashi"
+  description: "This is my personal blog. I will be posting my personal and professional data projects."
   navbar:
     right:
-      - about.qmd
+      - blog.qmd
+      - archive.qmd
+      - text: CV
+        href: "download_files/CV_Gentian Gashi.PDF"
       - icon: github
         href: https://github.com/gentiang
+      - icon: linkedin
+        href: https://www.linkedin.com/in/gentiangashi/
 format:
   html:
-    theme: cosmo
+    theme: yeti
     css: styles.css
 
 editor: visual

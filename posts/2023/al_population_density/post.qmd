@@ -1,0 +1,11 @@
+---
+title: "Albania Population Density"
+author: "Gentian Gashi"
+date: "2023-12-31"
+categories: [map, rayshader, population]
+image: "image.png"
+---
+
+This map shows a unique population density map of Albania [Kontur](https://www.kontur.io/geospatial-datasets-catalog/) population data and the [`rayshader`](https://www.rayshader.com/) R package by Tyler Morgan-Wall. I take huge inspiration from [Spencer Schien](https://github.com/Pecners) whose maps and code are a massive help as I'm learning to make these.
+
+![](image.png)

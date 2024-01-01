@@ -1,12 +1,38 @@
 ---
-title: "test"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+title: "About"
+image: profile.jpg
+about:
+  template: solana
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/gentiangashi/
+    - icon: github
+      text: Github
+      href: https://github.com/gentiang
+    - icon: envelope
+      text: E-mail
+      href: mailto:gentiangsh@gmail.com
+  image-shape: rectangle
 ---
+
+Gentian Gashi is a Consultant for Economics and Data Science at The World Bank in Kosovo and Austria. When not innovating on data platforms, Gentian enjoys spending time hiking and running.
+
+## Education
+
+**Albert-Ludwigs University of Freiburg** | Freiburg, Germany<br>
+*M.Sc. in Economics* | October 2016 - March 2019
+
+**American University in Bulgaria** | Blagoevgrad, Bulgaria<br>
+*B.A in Economics* | August 2012 - May 2016
+
+## Work Experience
+
+**The World Bank** | Prishtina, Kosovo & Vienna, Austria<br>
+*Economist & Data Scientist* | March 2023 - Present
+
+**UNICEF** | Prishtina, Kosovo<br>
+*Consultant for Data & Statistics* | August 2021 - February 2022
+
+**GAP Institute** | Prishtina, Kosovo<br>
+**Researcher** | August 2019 - August 2021

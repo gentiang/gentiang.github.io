@@ -1,0 +1,37 @@
+---
+title: "A Quick Look at Inflation in Kosovo"
+author: "Gentian Gashi"
+date: "2022-08-21"
+categories: [news, analysis, inflation, data science, economics]
+image: "hicp_year.png"
+---
+
+Two years ago, with tens of thousands of people out of work and politicians striving to lift the economies in the Western Balkans out of a pandemic-induced recession, inflation was inevitable. Moreover, with the beginning of the Russian invasion in Ukraine that has disrupted supply chains considerably, inflation has been affected doubly so. Though transitory in nature as a consequence of dysfunctional supply chains and labor shortages that would be expected to return back to normal as demonstrated by previous economic recessions, current inflation is running particularly high.
+
+According to the latest data from National Statistical Offices in the Western Balkans, the annual inflation rate in June, 2022 was reaching 15%, similar to that during the global recession of 2008, as measured by the harmonized index of consumer prices. North Macedonia leads the pack with a rate of 14.5%, closely followed by Kosovo (14.1%). Montenegro and Serbia have experienced a considerable increase in their inflation by 11.9% and 11.6%, respectively. Albania's inflation in June, 2022 stood at 6.6%, considerably less compared to the other countries.
+
+![](hicp_map.png)
+
+One of the countries where inflation has risen fastest over the past couple of months is Kosovo. In June, 2021, the annual inflation rate was standing at 2.4%, picking up gradually every month and becoming 14.1% in June, 2022. Being that Kosovo is a net importer of electricity, oil, wheat, corn, vegetable oil, supply shocks to international markets as a result of the Russian invasion of Ukraine are bound to be reflected in its economy[^1].
+
+[^1]: ["Impact of the War in Ukraine on Kosovo's Economy,"](https://www.institutigap.org/documents/20407_Impact%20of%20the%20war%20in%20Ukraine%20on%20Kosovos%20Economy.pdf) GAP Institute. May, 2022
+
+![](hicp_year.png)
+
+Regardless of the absolute level of inflation in Kosovo, what's most striking is the relatively fast rise of inflation in the year 2022. The annual change in Kosovo's monthly inflation in the second quarter of this year averaged 13.6% compared to the second quarter of 2021, when monthly inflation averaged just 2.6%. High inflation has been an exception in the past 20 years in Kosovo, where inflation exceeded the 5% bound only twice before the current one. However, it seems that inflation in Kosovo is slowly approaching the 15% bound as well. While high inflation is a transitory period, current levels of inflation in Kosovo stand at an all-time high and it is unforeseeable as to when they will drop.
+
+![](climate_spiral4.gif)
+
+The visualizations and analysis in this article were done in RStudio, and the source code, raw datasets, and additional files for the analysis can be found on my [GitHub page](https://github.com/gentiang/inflation_analysis).[^2]^,^[^3]^,^[^4]^,^[^5]^,^[^6]^,^[^7]
+
+[^2]: [Kosovo Agency of Statistics](https://askdata.rks-gov.net/pxweb/en/ASKdata/ASKdata__Prices__Consumer%20Price%20Index__Monthly%20indicators/)
+
+[^3]: [INSTAT - Institute of Statistics Albania](http://www.instat.gov.al/en/themes/prices/harmonized-index-of-consumer-price/)
+
+[^4]: [MONSTAT - Statistical Office of Montenegro](https://www.monstat.org/eng/page.php?id=27&pageid=27)
+
+[^5]: [Eurostat](https://ec.europa.eu/eurostat/databrowser/bookmark/5694c875-65bb-45df-9c2f-1e369a029881?lang=en)
+
+[^6]: [DIVA-GIS](https://www.diva-gis.org/) for shapefiles
+
+[^7]: [Riffomonas project](https://www.youtube.com/c/RiffomonasProject) - inspiration for inflation animation

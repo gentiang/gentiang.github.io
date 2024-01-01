@@ -70,9 +70,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-reading-time','listing-description','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -111,10 +111,25 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="dropdown-header">
- <span class="menu-text">about.qmd</span></li>
+  <li class="nav-item">
+    <a class="nav-link active" href="./blog.html" aria-current="page">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./archive.html">
+ <span class="menu-text">Archive</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./download_files/CV_Gentian Gashi.PDF">
+ <span class="menu-text">CV</span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/gentiang"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/gentiangashi/"><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -130,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(3)</span></div><div class="category" data-category="data science">data science <span class="quarto-category-count">(2)</span></div><div class="category" data-category="data viz">data viz <span class="quarto-category-count">(1)</span></div><div class="category" data-category="economics">economics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ggplot2">ggplot2 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="inflation">inflation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="labor force">labor force <span class="quarto-category-count">(1)</span></div><div class="category" data-category="map">map <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(3)</span></div><div class="category" data-category="population">population <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rayshader">rayshader <span class="quarto-category-count">(1)</span></div><div class="category" data-category="time use">time use <span class="quarto-category-count">(1)</span></div><div class="category" data-category="trade">trade <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -156,15 +171,78 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="news,code,analysis" data-listing-date-sort="1703977200000" data-listing-file-modified-sort="1704020671212" data-listing-reading-time-sort="0.035">
+<div class="quarto-post image-right" data-index="0" data-categories="map,rayshader,population" data-listing-date-sort="1703977200000" data-listing-file-modified-sort="1704112092164" data-listing-reading-time-sort="0.21">
 <div class="thumbnail">
-<p><a href="./posts/post-with-code/index.html"> <img src="./posts/post-with-code/image.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/2023/al_population_density/post.html"> <img src="./posts/2023/al_population_density/image.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
-<a href="./posts/post-with-code/index.html">
+<a href="./posts/2023/al_population_density/post.html">
 <h3 class="no-anchor listing-title">
-Post With Code
+Albania Population Density
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('map'); return false;">
+map
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('rayshader'); return false;">
+rayshader
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('population'); return false;">
+population
+</div>
+</div>
+<a href="./posts/2023/al_population_density/post.html">
+<div class="listing-description">
+This map shows a unique population density map of Albania Kontur population data and the <code>rayshader</code> R package by Tyler Morgan-Wall. I take huge inspiration from Spencer Schien whose maps and code are a massive help as I’m learning to make…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/2023/al_population_density/post.html">
+<div class="listing-date">
+Dec 31, 2023
+</div>
+<div class="listing-reading-time">
+0 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="news,analysis,time use,data viz,labor force,ggplot2" data-listing-date-sort="1681509600000" data-listing-file-modified-sort="1704111857731" data-listing-reading-time-sort="0.24">
+<div class="thumbnail">
+<p><a href="./posts/2023/time_use/time_use.html"> <img src="./posts/2023/time_use/time_use.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./posts/2023/time_use/time_use.html">
+<h3 class="no-anchor listing-title">
+Time Use in Kosovo
 </h3>
 <div class="listing-subtitle">
 
@@ -173,39 +251,95 @@ Post With Code
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
 news
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
 </div>
 <div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
 analysis
 </div>
+<div class="listing-category" onclick="window.quartoListingCategory('time use'); return false;">
+time use
 </div>
-<a href="./posts/post-with-code/index.html">
+<div class="listing-category" onclick="window.quartoListingCategory('data viz'); return false;">
+data viz
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('labor force'); return false;">
+labor force
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ggplot2'); return false;">
+ggplot2
+</div>
+</div>
+<a href="./posts/2023/time_use/time_use.html">
 <div class="listing-description">
-This is a post with executable code.
+The following graphical analysis shows several…
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/post-with-code/index.html">
+<a href="./posts/2023/time_use/time_use.html">
 <div class="listing-date">
-Dec 31, 2023
+Apr 15, 2023
 </div>
-<div class="listing-author">
-Harlow Malloc
+<div class="listing-reading-time">
+0 min
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="news" data-listing-date-sort="1703718000000" data-listing-file-modified-sort="1704020671210" data-listing-reading-time-sort="0.16">
+<div class="quarto-post image-right" data-index="2" data-categories="news,analysis,trade,data science,economics" data-listing-date-sort="1663365600000" data-listing-file-modified-sort="1704111368467" data-listing-reading-time-sort="2.22">
 <div class="thumbnail">
-<p><a href="./posts/welcome/index.html"> <img src="./posts/welcome/thumbnail.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/2022/trade/trade.html"> <img src="./posts/2022/trade/dc_imp.jpg" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
-<a href="./posts/welcome/index.html">
+<a href="./posts/2022/trade/trade.html">
 <h3 class="no-anchor listing-title">
-Welcome To My Blog
+An Overview of Kosovo’s Trade
+</h3>
+<div class="listing-subtitle">
+Kosovo’s negative trade balance is deepening despite recent increases in exports. Where is this sudden increase in trade volume, and especially imports coming from?
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
+news
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
+analysis
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('trade'); return false;">
+trade
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
+data science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('economics'); return false;">
+economics
+</div>
+</div>
+<a href="./posts/2022/trade/trade.html">
+<div class="listing-description">
+An overview of trade data collected from the Comext data portal managed by the…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/2022/trade/trade.html">
+<div class="listing-date">
+Sep 17, 2022
+</div>
+<div class="listing-reading-time">
+2 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="news,analysis,inflation,data science,economics" data-listing-date-sort="1661032800000" data-listing-file-modified-sort="1704111388225" data-listing-reading-time-sort="2.165">
+<div class="thumbnail">
+<p><a href="./posts/2022/inflation/inflation_2022.html"> <img src="./posts/2022/inflation/hicp_year.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./posts/2022/inflation/inflation_2022.html">
+<h3 class="no-anchor listing-title">
+A Quick Look at Inflation in Kosovo
 </h3>
 <div class="listing-subtitle">
 
@@ -215,20 +349,32 @@ Welcome To My Blog
 <div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
 news
 </div>
+<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
+analysis
 </div>
-<a href="./posts/welcome/index.html">
+<div class="listing-category" onclick="window.quartoListingCategory('inflation'); return false;">
+inflation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('data science'); return false;">
+data science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('economics'); return false;">
+economics
+</div>
+</div>
+<a href="./posts/2022/inflation/inflation_2022.html">
 <div class="listing-description">
-This is the first post in a Quarto blog. Welcome!
+Two years ago, with tens of thousands of people out of work and politicians striving to lift the economies in the Western Balkans out of a pandemic-induced recession…
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/welcome/index.html">
+<a href="./posts/2022/inflation/inflation_2022.html">
 <div class="listing-date">
-Dec 28, 2023
+Aug 21, 2022
 </div>
-<div class="listing-author">
-Tristan O’Malley
+<div class="listing-reading-time">
+2 min
 </div>
 </a>
 </div>
