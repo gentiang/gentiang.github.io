@@ -53,7 +53,7 @@
     "href": "posts/2023/al_population_density/post.html",
     "title": "Albania Population Density",
     "section": "",
-    "text": "This map shows a unique population density map of Albania Kontur population data and the rayshader R package by Tyler Morgan-Wall. I take huge inspiration from Spencer Schien whose maps and code are a massive help as I’m learning to make these.\n\n\nThis project was carried out based on the latest Kontur population data (November, 2023) and shapefiles for the country. The data was combined, transformed and visualized in R Studio with text overlaying in Adobe Illustrator. The code and other necessary information can be found on my GitHub page."
+    "text": "This map shows a unique population density map of Albania Kontur population data and the rayshader R package by Tyler Morgan-Wall. I take huge inspiration from Spencer Schien whose maps and code are a massive help as I’m learning to make these. T.\n\n\nThis project was carried out based on the latest Kontur population data (November, 2023) and shapefiles for the country. The data was combined, transformed and visualized in R Studio with text overlaying in Adobe Illustrator. The code and other necessary information can be found on my GitHub page."
   },
   {
     "objectID": "posts/2023/time_use/time_use.html",
