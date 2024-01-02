@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Gentian Gashi">
-<meta name="dcterms.date" content="2023-12-31">
+<meta name="dcterms.date" content="2023-01-17">
 
-<title>Gentian Gashi - Albania Population Density</title>
+<title>Gentian Gashi - Hotel Revenues</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -128,11 +162,13 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Albania Population Density</h1>
+<h1 class="title">Hotel Revenues</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Map</div>
-    <div class="quarto-category">rayshader</div>
-    <div class="quarto-category">Population</div>
+    <div class="quarto-category">Analysis</div>
+    <div class="quarto-category">BI</div>
+    <div class="quarto-category">Data Viz</div>
+    <div class="quarto-category">SQL</div>
+    <div class="quarto-category">Power BI</div>
   </div>
   </div>
 
@@ -150,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 31, 2023</p>
+      <p class="date">January 17, 2023</p>
     </div>
   </div>
   
@@ -160,10 +196,72 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This map shows a unique population density map of Albania <a href="https://www.kontur.io/geospatial-datasets-catalog/">Kontur</a> population data and the <a href="https://www.rayshader.com/"><code>rayshader</code></a> R package by Tyler Morgan-Wall. I take huge inspiration from <a href="https://github.com/Pecners">Spencer Schien</a> whose maps and code are a massive help as I’m learning to make these.</p>
-<p><img src="image.png" class="img-fluid"></p>
+<p>In this project, I analyze hotel booking data between the years 2018–2020 acquired from <a href="https://absentdata.com/hotel_revenue_historical_full/">Absent Data</a> to figure out the revenue breakdown for several kinds of hotel characteristics. The data is analyzed in SQL (Microsoft SQL Server, and simultaneously in Google’s BigQuery) and visualized in Power BI via an interactive dashboard.</p>
+<p>The revenue data was split between several sheets in an Excel Workbook that had to be imported to Microsoft SQL Server, appended and summarized. Further on, indicators such as yearly revenue, yearly revenue by hotel type and the latter’s percentage in the yearly revenue were created. The data is then broken down by hotel type, year, and market segment. Below you can see a snapshot of the data along with the SQL code.</p>
+<p>The data clearly shows that yearly revenue is increasing in its first year. However, it soon drops off in 2020. Nevertheless, one caveat is that data for 2020 may not be complete and therefore not show the true change in revenue. As it pertains to revenue by hotel type, the data shows a mixed result in that resort hotels brought more revenue in 2018 than city hotels, but failed to do so in the subsequent years.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="hotel_data.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Hotel revenue data</figcaption>
+</figure>
+</div>
+<p>SQL Code for recreating the table above:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">DROP</span> <span class="kw">TABLE</span> <span class="cf">IF</span> <span class="kw">EXISTS</span> #sum_hotels; <span class="co">-- code to remedy iterative problems with temporary tables</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">WITH</span> hotels <span class="kw">AS</span>(       <span class="co">-- CTE to run before the main analysis so as to combine all the yearly tables</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> hotel_reservations.[dbo].[<span class="dv">2018</span>]</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">UNION</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> hotel_reservations.[dbo].[<span class="dv">2019</span>]</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">UNION</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> hotel_reservations.[dbo].[<span class="dv">2020</span>])</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span>         </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a> hotel,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a> arrival_date_year,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a> <span class="fu">ROUND</span>(<span class="fu">SUM</span>((stays_in_week_nights <span class="op">+</span> stays_in_weekend_nights)<span class="op">*</span>adr<span class="op">*</span>Discount),<span class="dv">2</span>) <span class="kw">AS</span> revenue,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a> hotels.market_segment,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a> Discount</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">INTO</span> </span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a> #sum_hotels       <span class="co">-- creating a temporary table so that we can use it later on for creating more variables inside of it</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> </span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a> hotels</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="kw">JOIN</span> </span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a> hotel_reservations.[dbo].market_segment</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="kw">ON</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a> market_segment.market_segment <span class="op">=</span> hotels.market_segment</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="kw">GROUP</span> <span class="kw">BY</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a> arrival_date_year, </span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a> hotel, </span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a> hotels.market_segment,</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a> Discount</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="kw">ORDER</span> <span class="kw">BY</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a> hotel,</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a> arrival_date_year,</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a> market_segment;</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> </span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a> <span class="op">*</span>, </span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a> <span class="fu">ROUND</span>(yearly_revenue_by_hotel_type<span class="op">/</span>yearly_revenue,<span class="dv">2</span>) <span class="kw">AS</span> hotel_revenue_share</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a> (<span class="kw">SELECT</span> </span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>  <span class="op">*</span>,</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">SUM</span>(revenue) <span class="kw">OVER</span>(<span class="kw">PARTITION</span> <span class="kw">BY</span> arrival_date_year) <span class="kw">AS</span> yearly_revenue,</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">SUM</span>(revenue) <span class="kw">OVER</span>(<span class="kw">PARTITION</span> <span class="kw">BY</span> arrival_date_year, hotel) <span class="kw">AS</span> yearly_revenue_by_hotel_type</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a> <span class="kw">FROM</span> </span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>  #sum_hotels) <span class="kw">AS</span> a     <span class="co">-- the temporary table is used as a subquery that contains window variables that will be used to calculate indicators in the main query</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a> <span class="kw">ORDER</span> <span class="kw">BY</span> </span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>  arrival_date_year,</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>  hotel,</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>  market_segment;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Afterwards, the data was loaded in Microsoft Power BI where it was queried from SQL and visualized through a simple interactive dashboard. The dashboard shows main indicators such as revenue, average daily rate at the hotels, the amount of total nights booked in the hotels, average discount, and total parking lot spaces. Additionally, historical revenue by hotel type is broken down by hotel type. Lastly, the data can be filtered via date and country of guests as well. An interesting insight is that car parking spaces shot up between 2018 and 2019 as a result of an increase in stays during that year.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="hotel_revenue.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Power BI dashboard of hotel revenue data</figcaption>
+</figure>
+</div>
 <hr>
-<p>This project was created based on the latest Kontur population data (November, 2023) and shapefiles for the country. The data was combined, transformed and visualized in R Studio with text overlaying in Adobe Illustrator. The code and other necessary information can be found on my <a href="https://github.com/gentiang/population_density">GitHub page</a>.</p>
+<p>This project and the alternate BigQuery source code can be found on my <a href="https://github.com/gentiang/hotel_reservations">GitHub page</a>.</p>
 
 
 

@@ -21,7 +21,7 @@ about:
   image-shape: rectangle
 ---
 
-Gentian Gashi is a Consultant for Economics and Data Science at The World Bank in Kosovo and Austria. When not innovating on data platforms, Gentian enjoys spending time hiking and running.
+I am a Consultant for Economics and Data Science at The World Bank in Kosovo and Austria. This page serves as a portfolio of my personal data projects. I am also open to collaboration, so if you're interested or have any inquiries, feel free to reach out via email. When not innovating on data platforms, I enjoy spending time hiking and running. 
 
 ## Work Experience
 

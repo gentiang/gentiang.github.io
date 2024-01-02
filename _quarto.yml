@@ -7,6 +7,7 @@ website:
   description: "This is my personal blog. I will be posting my personal and professional data projects."
   navbar:
     right:
+      - index.qmd
       - blog.qmd
       - archive.qmd
       - text: CV
@@ -18,6 +19,9 @@ website:
       - icon: linkedin
         href: https://www.linkedin.com/in/gentiangashi/
         target: '_blank'
+  page-footer: 
+    center: "This work © 2024 by Gentian Gashi is licensed under [Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/)"
+    background: light
 format:
   html:
     theme: yeti

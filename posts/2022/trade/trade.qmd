@@ -51,4 +51,4 @@ Nevertheless, despite knowing what kinds of goods took the lead in terms of trad
 
 ------------------------------------------------------------------------
 
-This project was carried out based on monthly trade data for Kosovo collected from the [Comext](https://ec.europa.eu/eurostat/web/international-trade-in-goods/data/focus-on-comext) database for trade data managed by Eurostat. The data was combined and cleaned in R Studio. The analysis and visualizations were also produced in R Studio, and the code and other necessary information can be found on my \[GitHub page\](https://github.com/gentiang/trade_analysis.
+This project was carried out based on monthly trade data for Kosovo collected from the [Comext](https://ec.europa.eu/eurostat/web/international-trade-in-goods/data/focus-on-comext) database for trade data managed by Eurostat. The data was combined and cleaned in R Studio. The analysis and visualizations were also produced in R Studio, and the code and other necessary information can be found on my \[GitHub page\](https://github.com/gentiang/trade_analysis).
