@@ -72,7 +72,7 @@ FROM
   market_segment;
 ```
 
-Afterwards, the data was loaded in Microsoft Power BI where it was queried from SQL and visualized through a simple interactive dashboard. The dashboard shows main indicators such as revenue, average daily rate at the hotels, the amount of total nights booked in the hotels, average discount, and total parking lot spaces. Additionally, historical revenue by hotel type is broken down by hotel type. Lastly, the data can be filtered via date and country of guests as well. An interesting insight is that car parking spaces shot up between 2018 and 2019 as a result of an increase in stays during that year.
+Afterwards, the data was loaded in Microsoft Power BI where it was queried from SQL and visualized through a simple interactive dashboard. The dashboard shows several key indicators such as revenue, average daily rate at the hotels, the amount of total nights booked in the hotels, average discount, and total parking lot spaces. Additionally, historical revenue by hotel type is broken down by hotel type. Lastly, the data can be filtered via date and country of guests as well. An interesting insight is that car parking spaces shot up between 2018 and 2019 as a result of an increase in stays during that year.
 
 ![Power BI dashboard of hotel revenue data](hotel_revenue.jpg)
 
