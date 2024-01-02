@@ -1,5 +1,5 @@
 ---
-title: "Hotel Revenues"
+title: "Hotel Revenue"
 author: "Gentian Gashi"
 date: "2023-01-17"
 categories: [Analysis, BI, Data Viz, SQL, Power BI]

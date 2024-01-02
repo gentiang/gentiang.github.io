@@ -9,7 +9,6 @@ website:
     right:
       - index.qmd
       - blog.qmd
-      - archive.qmd
       - text: CV
         href: "download_files/CV_Gentian Gashi.PDF"
         target: '_blank'
