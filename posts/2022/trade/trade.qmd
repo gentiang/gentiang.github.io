@@ -7,7 +7,7 @@ categories: [News, Analysis, Trade, Data Science, Economics]
 image: "dc_imp.jpg"
 ---
 
-An overview of trade data collected from the Comext data portal managed by the European Comission that houses detailed trade data for Western Balkan countries shows unusual recent developments in terms of trade volume, trade partners and types of products traded.
+An overview of trade data collected from the Comext data portal managed by the European Comission that houses detailed trade data for Western Balkan countries shows unusual recent developments in terms of trade volume, trade partners and types of products traded. 
 
 Between the years 2010 and 2021, imports rose gradually as well as exports, which did so at a slower pace. However, in 2021 the negative trade balance deepened quickly and considerably, reaching €-4 billion in 2021, with exports standing at €593 million and imports at €4.6 billion.
 
