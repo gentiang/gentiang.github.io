@@ -89,5 +89,12 @@
     "title": "Hotel Revenues",
     "section": "This small dataset was perfect for quickly summarizing key insights from hotel reservations.",
     "text": "This small dataset was perfect for quickly summarizing key insights from hotel reservations.\nThis project and the alternate BigQuery source code can be found on my GitHub page."
+  },
+  {
+    "objectID": "index.html#suscribe",
+    "href": "index.html#suscribe",
+    "title": "About",
+    "section": "Suscribe",
+    "text": "Suscribe\nIf you want to stay up-to-date with my articles, then don’t miss out on any future posts by subscribing to my email newsletter."
   }
 ]

@@ -36,3 +36,9 @@ I am a Consultant for Economics and Data Science at The World Bank in Kosovo and
 **Albert-Ludwigs University of Freiburg** \| Freiburg, Germany<br> *M.Sc. in Economics* \| October 2016 - March 2019
 
 **American University in Bulgaria** \| Blagoevgrad, Bulgaria<br> *B.A in Economics* \| August 2012 - May 2016
+
+## Suscribe
+
+If you want to stay up-to-date with my articles, then don't miss out on any future posts by subscribing to my email newsletter.
+
+<iframe src="https://embeds.beehiiv.com/cd8cc36b-871e-4643-a3ad-223910787fef?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
