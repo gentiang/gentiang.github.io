@@ -1,0 +1,19 @@
+---
+title: "Kosovo Population Density"
+author: "Gentian Gashi"
+date: "2024-01-09"
+categories: [Map, rayshader, Population]
+image: "image1.png"
+---
+
+This map shows a unique population density map of Kosovo using [Kontur](https://www.kontur.io/geospatial-datasets-catalog/) population data as of November, 2023, and the [`rayshader`](https://www.rayshader.com/) R package by Tyler Morgan-Wall. According to the data, the cities containing the some of the densest areas are Prishtinë (3722), Prizren (3385), and Gjilan (2526).
+
+![](image1.png)
+
+Additionally, a density map of Kosovo's capital -- Prishtina -- shows the high concentration of settlements in the city's west.
+
+![](image2.png)
+
+***
+
+This project was created based on the latest Kontur population data (November, 2023) and shapefiles for the country. The data was combined, transformed and visualized in R Studio with text overlaying in Adobe Illustrator. The code and other necessary information can be found on my [GitHub page](https://github.com/gentiang/population_density). I take huge inspiration from [Spencer Schien](https://github.com/Pecners) whose maps and code are a massive help.

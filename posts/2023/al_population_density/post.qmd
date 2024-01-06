@@ -6,10 +6,10 @@ categories: [Map, rayshader, Population]
 image: "image.png"
 ---
 
-This map shows a unique population density map of Albania [Kontur](https://www.kontur.io/geospatial-datasets-catalog/) population data and the [`rayshader`](https://www.rayshader.com/) R package by Tyler Morgan-Wall. I take huge inspiration from [Spencer Schien](https://github.com/Pecners) whose maps and code are a massive help as I'm learning to make these.
+This map shows a unique population density map of Albania using [Kontur](https://www.kontur.io/geospatial-datasets-catalog/) population data as of November, 2023, and the [`rayshader`](https://www.rayshader.com/) R package by Tyler Morgan-Wall. According to the data, the cities containing the densest areas are Fier (11577), Tiranë (10856), and Korçë (8604).
 
 ![](image.png)
 
 ------------------------------------------------------------------------
 
-This project was created based on the latest Kontur population data (November, 2023) and shapefiles for the country. The data was combined, transformed and visualized in R Studio with text overlaying in Adobe Illustrator. The code and other necessary information can be found on my [GitHub page](https://github.com/gentiang/population_density).
+This project was created based on the latest Kontur population data (November, 2023) and shapefiles for the country. The data was combined, transformed and visualized in R Studio with text overlaying in Adobe Illustrator. The code and other necessary information can be found on my [GitHub page](https://github.com/gentiang/population_density). I take huge inspiration from [Spencer Schien](https://github.com/Pecners) whose maps and code are a massive help.
