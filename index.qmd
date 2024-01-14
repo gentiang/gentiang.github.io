@@ -4,6 +4,8 @@ image: profile.jpg
 about:
   template: solana
   links:
+    - text: Blog
+      href: https://www.gentiang.com/blog
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/gentiangashi/
