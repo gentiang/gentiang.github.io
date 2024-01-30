@@ -4,7 +4,7 @@ image: profile.jpg
 about:
   template: solana
   links:
-    - text: Blog
+    - text: "{{< fa brands blogger-b >}} Blog"
       href: https://www.gentiang.com/blog
     - icon: linkedin
       text: LinkedIn
@@ -17,7 +17,7 @@ about:
     - icon: envelope
       text: E-mail
       href: mailto:gentiangsh@gmail.com
-    - text: CV
+    - text: "{{< fa regular file-pdf >}} CV"
       href: "download_files/CV_Gentian Gashi.PDF"
       target: '_blank'
   image-shape: rectangle
